@@ -1,7 +1,7 @@
 
 ## 📓 Notebook
 
-# Healthcare Data Analyst Project
+# Healthcare Operations Quality Analytics
 
 ## 📌 Overview
 End-to-end healthcare analytics project analyzing hospital operations and quality metrics using **Python, SQL, and Jupyter**.  
