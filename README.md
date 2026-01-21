@@ -16,15 +16,6 @@ To address this, I created and analyzed synthetic hospital data using Python and
 
 ---
 
-## 🎯 Business Questions
-- What is the 30-day hospital readmission rate?
-- Which diagnoses are associated with higher readmissions?
-- What is the average length of stay for inpatient encounters?
-- Where are hospital charges most concentrated?
-- Are diabetic patients meeting HbA1c control targets?
-
----
-
 
 ## 🎯 Business Questions — What This Project Answers
 
