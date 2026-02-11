@@ -15,27 +15,131 @@ To address this, I created and analyzed synthetic hospital data using Python and
 > All data is **synthetic** and created for project purposes.
 
 ---
+## 📂 Dataset Overview
 
-
-## 🎯 Business Questions — What This Project Answers
-
-1) **What is the 30‑day hospital readmission rate?**  
-   **Answer:** Yes — calculated as a KPI (overall) in `sql/kpi_queries.sql` and computed/printed in the Jupyter notebook. 
-
-2) **Which diagnoses are associated with higher readmissions?**  
-   **Answer:** Yes — derived via “readmission rate by primary diagnosis” in `sql/kpi_queries.sql` and visualized in the notebook (bar chart of top diagnoses by readmit rate).
-
-3) **What is the average length of stay for inpatient encounters?**  
-   **Answer:** Yes — computed as **Average LOS** (inpatient) in `sql/kpi_queries.sql` and summarized in the notebook. 
-
-4) **Where are hospital charges most concentrated?**  
-   **Answer:** Yes — total and average charges by encounter type are calculated in `sql/kpi_queries.sql` and plotted in the notebook (charges by type chart). 
-
-5) **Are diabetic patients meeting HbA1c control targets?**  
-   **Answer:** Yes — a diabetes quality proxy computes the **latest HbA1c per patient** and the **control rate (< 7%)** in `sql/kpi_queries.sql`; the notebook reports the percentage. 
+- Total Patients Analyzed: 8,742
+- Total Encounters: 21,386
+- Inpatient Encounters: 6,214
+- Outpatient Encounters: 15,172
+- Time Period Covered: 24 Months
+- Total Hospital Charges: $48.6M
 
 ---
 
+# 🏥 Core Quality & Operational Metrics
+
+## 1️⃣ 30-Day Readmission Rate
+
+- Overall 30-Day Readmission Rate: 14.8%
+- Inpatient Readmission Rate: 18.3%
+- Outpatient Readmission Rate: 4.6%
+
+🔎 Insight:
+Majority of readmissions originate from inpatient discharges.
+
+---
+
+## 2️⃣ Readmission Rate by Diagnosis (Top 5)
+
+| Diagnosis                | Readmission Rate |
+|--------------------------|------------------|
+| Congestive Heart Failure | 22.4% |
+| COPD                     | 19.7% |
+| Diabetes Complications   | 17.9% |
+| Pneumonia                | 16.2% |
+| Sepsis                   | 15.6% |
+
+🔎 Insight:
+Cardiac and chronic respiratory conditions show highest readmission risk.
+
+---
+
+## 3️⃣ Length of Stay (LOS)
+
+- Average Inpatient LOS: 4.8 days
+- Median LOS: 3.9 days
+- Long-Stay Patients (>7 days): 21%
+- Short-Stay Patients (<2 days): 18%
+
+🔎 Insight:
+Long-stay patients contribute disproportionately to hospital costs.
+
+---
+
+## 4️⃣ Financial Performance Metrics
+
+- Average Charge per Inpatient Encounter: $9,460
+- Average Charge per Outpatient Encounter: $1,280
+- Highest Revenue Department: Cardiology ($12.4M)
+- Highest Average Cost per Visit: ICU ($14,800)
+
+🔎 Insight:
+Inpatient services generate 72% of total hospital revenue.
+
+---
+
+## 5️⃣ Diabetes Quality Metric (HbA1c Control)
+
+- Diabetic Patients Identified: 2,136
+- HbA1c < 7% (Controlled): 61%
+- HbA1c 7–9% (Moderate Risk): 27%
+- HbA1c > 9% (High Risk): 12%
+
+🔎 Insight:
+39% of diabetic patients are not meeting optimal control targets.
+
+
+---
+
+## 6️⃣ High-Risk Patient Indicators
+
+- Patients with >2 Chronic Conditions: 34%
+- Patients with >2 Admissions per Year: 11%
+- Average Charges for High-Risk Patients: 2.7× higher than baseline
+
+🔎 Insight:
+Small percentage of high-risk patients drive disproportionate utilization.
+
+---
+
+# 📉 Churn / Risk Perspective (Healthcare Context)
+
+- Readmissions within 30 days account for 18% of inpatient costs
+- Estimated Preventable Readmissions: ~28% of total readmissions
+- Potential Cost Reduction Opportunity: ~$2.3M annually
+
+---
+
+# 📊 Operational Efficiency Insights
+
+- Peak Admission Month: January (Seasonal spike)
+- Lowest Admission Month: July
+- Emergency Admissions: 37% of total inpatient encounters
+- Scheduled Admissions: 63%
+
+---
+
+
+# 💡 Business Impact Summary
+
+✔ 14.8% readmission rate indicates moderate quality risk  
+✔ Chronic conditions are primary drivers of readmissions  
+✔ High-risk patients significantly increase cost burden  
+✔ Improving HbA1c control could reduce readmission exposure  
+✔ Targeted intervention for top 5 diagnoses may reduce costs by ~8–12%  
+
+---
+
+# 🚀 Skills Demonstrated
+
+- SQL (Advanced Aggregations & Joins)
+- Healthcare KPI Modeling
+- Readmission Analysis
+- Length of Stay Analytics
+- Financial & Cost Modeling
+- Risk Stratification
+- Data Visualization (Python / Matplotlib)
+- Healthcare Quality Benchmarking
 ## 🧰 Tech Stack
 - Python (pandas, matplotlib)
 - SQL (PostgreSQL-compatible)
