@@ -118,7 +118,27 @@ Small percentage of high-risk patients drive disproportionate utilization.
 - Scheduled Admissions: 63%
 
 ---
+Executive Summary
 
+- **Total Charges Analyzed:** ~$238,000,000  
+- **Outpatient encounters generate the highest total charges (~$113M)**  
+- **Inpatient encounters account for approximately ~$86M**  
+- **Emergency encounters contribute approximately ~$39M**
+
+
+---
+
+## 🔎 Readmission Risk Insights
+
+Highest readmission diagnoses include:
+
+- **Asthma (~7.3%)**
+- **Hyperlipidemia (~7.1%)**
+- **Essential Hypertension (~7.0%)**
+- Atherosclerotic Heart Disease (~6.8%)
+- Type 2 Diabetes Mellitus (~6.3%)
+- Major Depressive Disorder (~6.1%)
+- Chronic Kidney Disease Stage 3 (~4.7%)
 
 # 💡 Business Impact Summary
 
@@ -140,22 +160,9 @@ Small percentage of high-risk patients drive disproportionate utilization.
 - Risk Stratification
 - Data Visualization (Python / Matplotlib)
 - Healthcare Quality Benchmarking
-## 🧰 Tech Stack
-- Python (pandas, matplotlib)
-- SQL (PostgreSQL-compatible)
-- Jupyter Notebook
-- Git & GitHub
 
 ---
 
-## 📊 Key KPIs
-- 30-day readmission rate
-- Average inpatient LOS
-- Cost by encounter type
-- Readmission rate by primary diagnosis
-- HbA1c control rate (< 7%)
-
----
 
 ## 📁 Project Structure
 ```text
